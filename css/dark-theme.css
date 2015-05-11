@@ -34,7 +34,9 @@ li {font-size: 11pt; line-height: 16pt }
 .icon-text {font-size: 12pt; color: black}
 .fa-stack {width: 1em !important; font-size: 24pt}
 
-p.ref, i.note { font-size: 10pt; font-style: italic}
+p.ref, i.note { font-size: 10pt; font-style: italic;}
+i.note {display: none;}
+
 .button-small { 
 	font-size: 80%; 
 	background: #555;
