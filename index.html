@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Test NYNJ</title>
+    <title>Honest Transit</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <style>
       html, body, #map {
         height: 100%;
@@ -14,11 +14,53 @@
     </style>
 
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.14/themes/css/cartodb.css" />
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    <link rel="stylesheet" href="css/makeitresponsive.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<script src="http://purecss.io/js/ui.js"></script>
   </head>
   <body>
     <div id="map"></div>
+    <div class="sidepanel">
+      <div class="wrapper">
+        <h1><span class="fa-stack" style="padding-left: 0">
+			<i class="fa fa-circle fa-stack-1x" style="color: white"></i>
+			<strong class="fa-stack-1x icon-text">1</strong>
+		</span>
+		NY-NJ</h1>
+		<h2>Pop. 2,820,020<sup>[1]</sup></h2>
 
-    <!-- include cartodb.js library -->
+        <!--Copy and paste the div below for creating content blocks-->
+        <h3>Description</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dolor lacus, convallis eget tortor in, accumsan suscipit elit. Suspendisse potenti. Quisque vitae sem ac est viverra feugiat.</p>
+		<h3>Legend</h3>
+		 <ul class="fa-ul">
+		  <li><i class="fa-li fa fa-square fa-fw" style="color: red"></i>Tram, Streetcar, Light rail</li>
+		  <li><i class="fa-li fa fa-square fa-fw" style="color: red"></i>Subway, Metro</li>
+		  <li><i class="fa-li fa fa-square fa-fw" style="color: red"></i>Rail</li>
+		  <li><i class="fa-li fa fa-square fa-fw" style="color: red"></i>Bus</li>
+		  <li><i class="fa-li fa fa-square fa-fw" style="color: red"></i>Ferry</li>
+		  <li><i class="fa-li fa fa-square fa-fw" style="color: red"></i>Cable Car</li>
+		  <li><i class="fa-li fa fa-square fa-fw" style="color: red"></i>Gondola or Suspended Cable Car</li>
+		  <li><i class="fa-li fa fa-square fa-fw" style="color: red"></i>Funicular</li>
+		</ul>
+       
+
+        <div class="context footer">
+			<h3>About</h3>
+			<p><strong>Honest Transit</strong> is an animated piece created by <a href="https://www.linkedin.com/in/marianaposkus">Mariana Poskus</a> displaying a 24h weekday timeframe of public transit in the top 20 US metropolitan areas.</p>
+		</div>
+		<div class="context footer">
+			<h3>Sources</h3>
+			<p>Map created using  <a href="http://cartodb.com">CartoDB</a>. GTFS data provided by Google Maps through <a href="http://transitfeeds.com">Transit Feeds</a>. Custom basemap created with <a href="http://mapbox.com">Mapbox Studio</a>.</p>
+			<p class="ref"><sup>[1]</sup> 2010 US Census</p>
+        </div>
+        
+      </div>
+    </div>
+ 
+   <!-- include cartodb.js library -->
     <script src="http://libs.cartocdn.com/cartodb.js/v3/3.14/cartodb.js"></script>
 	<script src='http://api.tiles.mapbox.com/mapbox.js/v1.2.0/mapbox.standalone.js'></script>
     <script>
